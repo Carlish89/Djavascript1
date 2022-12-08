@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-img">
+        </div>
+        <div class="card-content">
+            <p class="subt">Laptop gamer AMD</p>
+            <input class="input0" type="text" placeholder="Color">
+            <input class="input1" type="text" placeholder="Cantidad">
+            <p class="precio">Precio : $400.000</p>
+            <button class="btn"><b>Calcular Total</b></button>
+        </div>
+    </div>
+    <div class="side">
+        <p>Total: $<span class="total"></span></p>
+        <p>Cantidad: <span class="cantidad"></span></p>
+        <div class="color">
+            <p>Color:</p>
+            <div class="figura"></div>
+        </div>
+    </div>
+    <script>
+        total = document.querySelector("p .total");
+        total.innerHTML = "0";
+        cantidad = document.querySelector("p .cantidad");
+        cantidad.innerHTML = "0";
+        boton = document.querySelector("button");
+        boton.addEventListener("click", () => {
+            cantidadSelect = document.querySelector(".input1");
+            cantidad = cantidadSelect.value;
+            resultado = cantidad * 400000;
+            total = document.querySelector("p .total");
+            total.innerHTML = resultado;
+            cant = document.querySelector("p .cantidad");
+            cant.innerHTML = cantidad;
+            colorSelect = document.querySelector(".input0");
+            color = colorSelect.value;
+            fig = document.querySelector(".figura")
+            fig.style.backgroundColor = color;
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    background-color: green;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 10px;
+}
+.card-img{
+    width: 300px;
+    height: 150px;
+    background-image: url('./img/image-from-rawpixel-id-2779378-original.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+}
+.subt{
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+.precio{
+    color: white;
+    margin-right: 110px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.btn{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 1px;
+}
+.side{
+    margin-left: 15px;
+}
+.side p{
+    margin: 2px;
+}
+.figura{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.color{
+    display: flex;
+}
